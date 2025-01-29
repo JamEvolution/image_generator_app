@@ -1,6 +1,9 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../core/enums/image_service_type.dart';
 import '../../../../core/error/network_error.dart';
+import '../../domain/enums/image_source.dart';
+import '../../domain/enums/image_tab.dart';
+import '../../domain/enums/request_status.dart';
 import '../../domain/repositories/i_image_generation_repository.dart';
 import 'image_generation_state.dart';
 import '../../data/repositories/image_generation_repository.dart';

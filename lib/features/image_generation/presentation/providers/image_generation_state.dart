@@ -1,29 +1,9 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import '../../domain/enums/image_source.dart';
+import '../../domain/enums/image_tab.dart';
+import '../../domain/enums/request_status.dart';
 
 part 'image_generation_state.freezed.dart';
-
-enum ImageTab {
-  dallE,
-  stableDiffusion,
-  deepSeek
-}
-
-enum ImageSource {
-  model,    // AI model tarafından üretilen
-  mock,     // Test için kullanılan mock veri
-  none      // Henüz görsel yok
-}
-
-enum RequestStatus {
-  initial,
-  loading,
-  success,
-  error,
-  unauthorized,  // 401
-  forbidden,     // 403
-  notFound,      // 404
-  serverError    // 500
-}
 
 @freezed
 class ImageGenerationState with _$ImageGenerationState {
