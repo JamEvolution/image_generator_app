@@ -5,19 +5,25 @@ Yapay zeka tabanlı görsel üretim uygulaması, modern yazılım mimarisi prens
 ## Teknoloji Yığını
 
 ### Gereksinimler
-- Flutter SDK: 3.19.0
-- Dart SDK: 3.3.0
-- Minimum Android SDK: 21
-- Minimum iOS Version: 12.0
+- Flutter SDK: 3.27.3 (stable channel)
+- Dart SDK: 3.6.1
+- Minimum Dart SDK: >=3.0.0 <4.0.0
+- Android:
+  - Compile SDK: Flutter default (34)
+  - Min SDK: Flutter default (21)
+  - Target SDK: Flutter default (34)
+- iOS:
+  - Deployment Target: iOS 11.0
+  - Xcode: 14.0 veya üstü
 
 ### Temel Paketler
-- **flutter_riverpod**: ^2.4.10
+- **flutter_riverpod**: ^2.4.9
   - Bağımlılık enjeksiyonu ve state yönetimi için tercih edildi
   - Widget ağacından bağımsız state yönetimi sağlar
   - Test edilebilirliği artırır
   - Provider'lar arasında bağımlılık yönetimini kolaylaştırır
 
-- **freezed**: ^2.4.7
+- **freezed**: ^2.4.6
   - İmmutable state yönetimi için kullanıldı
   - Union types ile hata yönetimini güçlendirir
   - Boilerplate kod yazımını minimize eder
@@ -27,6 +33,11 @@ Yapay zeka tabanlı görsel üretim uygulaması, modern yazılım mimarisi prens
   - Güvenli environment variable yönetimi
   - API anahtarlarının güvenli saklanması
   - Build time'da environment değişkenlerinin derlenmesi
+
+- **dio**: ^5.4.0
+  - HTTP client
+  - İnterceptor desteği
+  - Form data ve multipart desteği
 
 ## Mimari
 
